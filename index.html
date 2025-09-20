@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#tours">Tours</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#signup">Book</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <header>
+    <h1>Nick Tours</h1>
+    <h2>Lakshadweep Islands</h2>
+    <button onclick="document.getElementById('signup').scrollIntoView({behavior:'smooth'});">
+      Book Now
+    </button>
+  </header>
+  <section class="tours" id="tours">
+    <h2>Our Tours</h2>
+    <div class="tour-cards">
+      <div class="tour-card">
+        <img src="Tour 01.png" alt="Tour 1">
+        <h3>Tour 01</h3>
+        <p>Kayaking in the Lagoons</p>
+      </div>
+      <div class="tour-card">
+        <img src="Tour 02.png" alt="Tour 2">
+        <h3>Tour 02</h3>
+        <p>Underwater Exploration</p>
+      </div>
+      <div class="tour-card">
+        <img src="Tour 03.png" alt="Tour 3">
+        <h3>Tour 03</h3>
+        <p>Relaxing on Pristine Beaches</p>
+      </div>
+    </div>
+  </section>
+  <section class="promo">
+    <h2>Discover the Lakshadweep Islands</h2>
+    <p>Watch videos from our tours and travel with us!</p>
+  </section>
+  <section class="video-section">
+    <h2>Explore Lakshadweep</h2>
+    <iframe src="https://www.youtube.com/embed/B8S2jhWwTDg?autoplay=1&loop=1&playlist=B8S2jhWwTDg&mute=1&controls=0&modestbranding=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </section>
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="Tour 01.png" alt="">
+      <img src="https://i.pinimg.com/736x/d8/96/92/d8969264a8dc1f110efeacec8d1f81ec.jpg" alt="">
+      <img src="https://i.pinimg.com/736x/56/fc/9e/56fc9e655065c73b8b33f53e87c33c7f.jpg" alt="">
+      <img src="https://i.pinimg.com/1200x/67/60/bf/6760bf13acecc925d7b4f9aa217ec989.jpg" alt="">
+    </div>
+  </section>
+  <section class="signup" id="signup">
+    <form>
+      <h2>Sign Up for a Tour</h2>
+      <input type="text" placeholder="Your Name" required>
+      <select required>
+        <option value="">Select Tour</option>
+        <option>Tour 01</option>
+        <option>Tour 02</option>
+        <option>Tour 03</option>
+        <option>All</option>
+        <option>Tour 01 and Tour 02</option>
+        <option>Tour 02 and Tour 03</option>
+        <option>Tour 01 and Tour 03</option>
+      </select>
+      <input type="date" required>
+      <input type="number" placeholder="Number of People" min="1" required>
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+  <footer id="contact">
+    <p>© 2025 Travel Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
